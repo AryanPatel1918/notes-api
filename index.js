@@ -9,9 +9,9 @@ app.use(express.json())
 let notes = [
   { id: 1, title: "Shopping List", content: "Milk, Eggs, Bread" },
   { id: 2, title: "Workout Plan", content: "Run 5km, Pushups" },
-  { id: 3, title: "Dinner Items", content: "Pizza, Pepsi" }
+  { id: 3, title: "Dinner Items", content: "Pizza, Garlic dip, Bread sticks, Marinara sauce, Pepsi" }
 ]
-let nextId = 3
+let nextId = 4
 
 app.get('/', (req, res) => {
   res.send("Welcome to Notes API")
