@@ -77,7 +77,7 @@ It demonstrates the basics of CRUD operations (Create, Read, Update, Delete).
    ```
    Or, if you use nodemon for auto-restart:
    ```
-   npx nodemon server.js
+   npm run dev
    ```
 
 4. The server will run at:
