@@ -1,7 +1,7 @@
 # 📝 Notes API
 
 A simple RESTful API built with **Node.js** and **Express.js** to manage notes.  
-This version uses **in-memory storage**, so notes are lost when the server restarts.  
+This version uses **file-based storage (`notes.json`)**, so notes **persist** even when the server restarts.  
 It demonstrates the basics of CRUD operations (Create, Read, Update, Delete).
 
 ---
@@ -13,13 +13,14 @@ It demonstrates the basics of CRUD operations (Create, Read, Update, Delete).
 - Update an existing note
 - Delete a note
 - Error handling for missing or invalid data
+- **Persistent storage** in `notes.json`
 
 ---
 
 ## 📖 API Endpoints
 
 | Method | Endpoint        | Description               | Request Body Example |
-|--------|-----------------|---------------------------|-----------------------|
+|--------|-----------------|---------------------------|--------------------|
 | GET    | `/notes`        | Get all notes             | - |
 | GET    | `/notes/:id`    | Get a single note by ID   | - |
 | POST   | `/notes`        | Create a new note         | `{ "title": "Test", "content": "Hello World" }` |
@@ -84,3 +85,5 @@ It demonstrates the basics of CRUD operations (Create, Read, Update, Delete).
    ```
    http://localhost:3000
    ```
+
+5. Notes will be **saved in `notes.json`**, ensuring persistence across server restarts.
